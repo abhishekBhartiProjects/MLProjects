@@ -74,8 +74,8 @@ dataset = pandas.read_csv(url, names=names)
 
 # Graph ---> Multi-varient plot
 # create scatter matrix
-scatter_matrix(dataset)
-plt.show()
+# scatter_matrix(dataset)
+# plt.show()
 
 # Lets analyse some algorithm and see accuracy of different algorithm in data analysis
 # 1st create validation dataset(taining dataset) - 1st 80% of data will train data, next 20% will validate data
@@ -91,24 +91,24 @@ plt.show()
 
 
 # #Check 5 different algorithm (Spot check algorithms)
-# models = []
-# models.append(('LR', LogisticRegression()))
-# models.append(('LDA', LinearDiscriminantAnalysis()))
-# models.append(('KNN', KNeighborsClassifier()))
-# models.append(('CART', DecisionTreeClassifier()))
-# models.append(('NB', GaussianNB()))
-# models.append(('SVM', SVC()))
+models = []
+models.append(('LR', LogisticRegression()))
+models.append(('LDA', LinearDiscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('CART', DecisionTreeClassifier()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC()))
 
-# # evaluate each model in turn
-# results = []
-# names = []
-# for name, model in models:
-# 	kfold=model_selection.KFold(n_splits=10, random_state=seed)
-# 	cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
-# 	results.append(cv_results)
-# 	names.append(name)
-# 	msg="%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-# 	print(msg)
+# evaluate each model in turn
+results = []
+names = []
+for name, model in models:
+	kfold=model_selection.KFold(n_splits=10, random_state=seed)
+	cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+	results.append(cv_results)
+	names.append(name)
+	msg="%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+	print(msg)
 
 
 
