@@ -69,13 +69,13 @@ dataset = pandas.read_csv(url, names=names)
 # plt.show()
 
 # histogram
-dataset.hist()
-plt.show()
+# dataset.hist()
+# plt.show()
 
 # Graph ---> Multi-varient plot
 # create scatter matrix
-# scatter_matrix(dataset)
-# plt.show()
+scatter_matrix(dataset)
+plt.show()
 
 # Lets analyse some algorithm and see accuracy of different algorithm in data analysis
 # 1st create validation dataset(taining dataset) - 1st 80% of data will train data, next 20% will validate data
