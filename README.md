@@ -1,4 +1,5 @@
 # MLProjects
+- This package contains various mini-projects (mainly for learning or beginner level projects). 
 
 ## classification.py 
 - A simple prediction based machine learning technique. This Uses sklearn to classify input data.
