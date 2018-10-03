@@ -43,12 +43,12 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
 # #data
-# url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
-# names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-# dataset = pandas.read_csv(url, names=names)
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = pandas.read_csv(url, names=names)
 
 # print rows and column count of dataset
-# print (dataset.shape)
+print (dataset.shape)
 
 #print 1st 30 rows of dataset
 # print (dataset.head(30))
