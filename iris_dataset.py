@@ -48,10 +48,10 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(url, names=names)
 
 # print rows and column count of dataset
-print (dataset.shape)
+# print (dataset.shape)
 
 #print 1st 30 rows of dataset
-# print (dataset.head(30))
+print (dataset.head(30))
 
 # print more descriptive values of dataset
 # print (dataset.describe())
