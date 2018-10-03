@@ -57,12 +57,12 @@ dataset = pandas.read_csv(url, names=names)
 # print (dataset.describe())
 
 # print no. of instances in each class
-print (dataset.groupby('class').size())
+# print (dataset.groupby('class').size())
 
 # Graph ---> Uni-varient plot
 # line-----
-# dataset.plot(kind='line', subplots=True, layout=(2,2), sharex=False, sharey=False)
-# plt.show()
+dataset.plot(kind='line', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
 
 # box
 # dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
