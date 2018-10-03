@@ -61,12 +61,12 @@ dataset = pandas.read_csv(url, names=names)
 
 # Graph ---> Uni-varient plot
 # line-----
-dataset.plot(kind='line', subplots=True, layout=(2,2), sharex=False, sharey=False)
-plt.show()
+# dataset.plot(kind='line', subplots=True, layout=(2,2), sharex=False, sharey=False)
+# plt.show()
 
 # box
-# dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-# plt.show()
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
 
 # histogram
 # dataset.hist()
