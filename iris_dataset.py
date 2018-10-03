@@ -51,10 +51,10 @@ dataset = pandas.read_csv(url, names=names)
 # print (dataset.shape)
 
 #print 1st 30 rows of dataset
-print (dataset.head(30))
+# print (dataset.head(30))
 
 # print more descriptive values of dataset
-# print (dataset.describe())
+print (dataset.describe())
 
 # print no. of instances in each class
 # print (dataset.groupby('class').size())
