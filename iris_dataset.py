@@ -65,12 +65,12 @@ dataset = pandas.read_csv(url, names=names)
 # plt.show()
 
 # box
-dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-plt.show()
+# dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+# plt.show()
 
 # histogram
-# dataset.hist()
-# plt.show()
+dataset.hist()
+plt.show()
 
 # Graph ---> Multi-varient plot
 # create scatter matrix
