@@ -79,15 +79,15 @@ dataset = pandas.read_csv(url, names=names)
 
 # Lets analyse some algorithm and see accuracy of different algorithm in data analysis
 # 1st create validation dataset(taining dataset) - 1st 80% of data will train data, next 20% will validate data
-# array = dataset.values
-# X = array[:, 0:4]
-# Y = array[:, 4]
-# validation_size = 0.20
-# seed = 6
-# X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size = validation_size, random_state = seed)
+array = dataset.values
+X = array[:, 0:4]
+Y = array[:, 4]
+validation_size = 0.20
+seed = 6
+X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size = validation_size, random_state = seed)
 
-# seed = 6
-# scoring = 'accuracy'
+seed = 6
+scoring = 'accuracy'
 
 
 # #Check 5 different algorithm (Spot check algorithms)
